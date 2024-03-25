@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="assets/css/output.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+</head>
+
+<body class="bg-white dark:bg-df1">
+    <header id="topHeader" class="fixed top-0 z-2 right-0 left-0">
+        <div class="flex justify-between items-center gap-8 py-6 pr-12 w-[85%] m-auto flex-wrap">
+            <p class="dark:text-blue-500 text-xl font-bold md:flex-[1.5]">Hasan Basri Bayat</p>
+            <div class="md:hidden block" onclick="showHideMenu()">
+                <i class="bx bx-menu text-4xl dark:text-blue"></i>
+            </div>
+            <div class="md:flex md:flex-row items-center hidden flex-col  gap-5 " id="menu">
+                <nav>
+                    <ul class="flex gap-8 flex-col md:flex-row">
+                        <li><a href="" class="text-lg font-normal text-grey-600 dark:text-blue-500 ">About</a></li>
+                        <li><a href="" class="text-lg font-normal text-grey-600 dark:text-blue-500 ">Article</a></li>
+                        <li><a href="" class="text-lg font-normal text-grey-600 dark:text-blue-500 ">Project</a></li>
+                    </ul>
+                </nav>
+                <div class="text-xl flex gap-4">
+                    <i class='bx bx-search dark:text-blue-500 '></i>
+                    <i class='bx bx-sun dark:text-blue-500 ' id="iconDark" onclick="switchDark()"></i>
+                </div>
+            </div>
+        </div>
+    </header>
+    <main class="flex flex-col gap-4 items-center ">
+        <section class="w-full ">
+            <div class="flex items-center  w-[85%] m-auto gap-10 my-36 md:flex-row flex-col-reverse">
+                <div class="md:w-2/3 flex flex-col gap-3 w-full">
+                    <p class="font-bold text-gray-400">Profesional</p>
+                    <h1 class="text-5xl dark:text-white font-bold">Flutter Developer and UI/UX Designer</h1>
+                    <p class="text-sm text-gray-400">my main goal is traveling whole world whil working remotely if you
+                        like to help/work with me, lets get's touch!</p>
+                    <button class="bg-black text-sm text-white font-medium py-3  w-28 rounded-xl dark:bg-blue-600">Say hello!</button>
+                </div>
+                <div class="w-full md:w-1/2">
+                    <img src="assets//img//Group 1191.png" alt="">
+                </div>
+            </div>
+        </section>
+        <section class="w-full">
+            <div class="w-[85%] m-auto flex flex-wrap gap-6">
+                <div class="w-[96%] flex flex-row justify-between  ">
+                    <p class="font-bold text-gray-950  dark:text-white">Latest Article</p>
+                    <p class="text-sm  font-semibold dark:text-white">SEE ALL</p>
+                </div>
+                <div class="md:w-[490px] w-full">
+                    <img src="assets/img/flutter hooks.jpeg.jpg" alt="">
+                </div>
+                <div class="md:w-[490px] flex flex-col gap-3 w-full">
+                    <div class="flex flex-row justify-between">
+                        <p class="text-sm dark:text-white">BEST PACKAGES - PART 1</p>
+                        <p class="font-light dark:text-white">24 may 2024</p>
+                    </div>
+                    <p class="font-bold dark:text-white">Minimalist Guide To Flutter Hooks</p>
+                    <p class=" dark:text-white">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint repellendus ratione dignissimos
+                        repudiandae pariatur quam at quas culpa, aut sit. Cupiditate, esse corrupti quo praesentium,
+                        dicta at tempore expedita ducimus ipsum aperiam, facilis in aliquid consectetur laboriosam
+                        reprehenderit ut nesciunt.</p>
+                </div>
+                <div class="flex flex-col gap-5">
+                    <div class="md:w-[490px] w-full">
+                        <img src="assets/img/flutter hooks.jpeg.jpg" alt="">
+                    </div>
+                    <div class="md:w-[490px] flex flex-col gap-3 w-full">
+                        <div class="flex flex-row justify-between">
+                            <p class="text-sm dark:text-white">BEST PACKAGES - PART 1</p>
+                            <p class="font-light dark:text-white">24 may 2024</p>
+                        </div>
+                        <p class="font-bold  dark:text-white">Minimalist Guide To Flutter Hooks</p>
+                        <p class="dark:text-white">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint repellendus ratione dignissimos
+                            repudiandae pariatur quam at quas culpa, aut sit. Cupiditate, esse corrupti quo praesentium,
+                            dicta at tempore expedita ducimus ipsum aperiam, facilis in aliquid consectetur laboriosam
+                            reprehenderit ut nesciunt.</p>
+                    </div>
+                </div>
+                <div class="flex flex-col gap-5">
+                    <div class="md:w-[490px] w-full">
+                        <img src="assets/img/flutter hooks.jpeg.jpg" alt="">
+                    </div>
+                    <div class="md:w-[490px] flex flex-col gap-5 w-full">
+                        <div class="flex flex-row justify-between">
+                            <p class="text-sm dark:text-white">BEST PACKAGES - PART 1</p>
+                            <p class="font-light dark:text-white">24 may 2024</p>
+                        </div>
+                        <p class="font-bold dark:text-white">Minimalist Guide To Flutter Hooks</p>
+                        <p class="dark:text-white">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint repellendus ratione dignissimos
+                            repudiandae pariatur quam at quas culpa, aut sit. Cupiditate, esse corrupti quo praesentium,
+                            dicta at tempore expedita ducimus ipsum aperiam, facilis in aliquid consectetur laboriosam
+                            reprehenderit ut nesciunt.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <script>
+        window.onscroll = function () {
+            menu()
+        };
+
+        function menu() {
+            if (document.documentElement.scrollTop > 20) {
+                document.getElementById('topHeader').classList.add("bg-white");
+                document.getElementById('topHeader').classList.add("shadow-lg");
+            } else {
+                if (document.documentElement.scrollTop == 0 && !xStatus) {
+                    document.getElementById('topHeader').classList.remove('bg-white');
+                    document.getElementById('topHeader').classList.remove('shadow-lg');
+                }
+            }
+        }
+        var xStatus = false;
+
+        function showHideMenu() {
+            if (!xStatus) {
+                document.getElementById('menu').classList.remove("hidden");
+                document.getElementById('menu').classList.add("flex");
+                if (document.documentElement.scrollTop < 20) {
+                    document.getElementById('topHeader').classList.add("bg-white");
+                }
+                xStatus = true;
+            } else {
+                if (document.documentElement.scrollTop < 20) {
+                    document.getElementById('topHeader').classList.remove("bg-white");
+                }
+                xStatus = false;
+                document.getElementById('menu').classList.add("hidden");
+                document.getElementById('menu').classList.remove("flex");
+            }
+        }
+        function switchDark() {
+            const mode = document.documentElement.classList.toggle('dark');
+            if (mode === true) {
+                document.getElementById('iconDark').classList.add("bx-moon");
+                document.getElementById('iconDark').classList.remove("bx-sun");
+            } else {
+                document.getElementById('iconDark').classList.add("bx-sun");
+                document.getElementById('iconDark').classList.remove("bx-moon");
+            }
+        }
+    </script>
+ 
+</body>
+
+</html>
+
